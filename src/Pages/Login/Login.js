@@ -25,6 +25,11 @@ const Login = () => {
 
             <button onClick={() => Login ()}>Entrar</button>
 
+            <div>
+            <span>Não tem uma conta?</span>
+
+            <span>CADASTRAR</span>
+            </div>
             
         </Container>
     )
