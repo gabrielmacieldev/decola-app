@@ -56,6 +56,10 @@ flex-direction: column;
     }
 }
 
+.logo {
+    width: 500px;
+}
+
 input {
     background: #dfdfdf;
     border-radius: 30px;
