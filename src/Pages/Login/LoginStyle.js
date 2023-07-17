@@ -1,26 +1,37 @@
 import styled from "styled-components"
 
+export const Image = styled.img`
+
+z-index: -1;
+
+`
 export const Container = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 
-.logo {
-    @media (max-width: 1000px) {
-        width: 800px;
-    }
 
+.logo {
+    @media (max-width: 1600px) {
+        width: 782px;
+    }
+    @media (max-width: 1300px) {
+        width: 625px;
+    }
+    @media (max-width: 1000px) {
+        width: 500px;
+    }
     @media (max-width: 800px) {
-        width: 600px;
+        width: 470px;
     }
 
     @media (max-width: 600px) {
-        width: 400px;
+        width: 450px;
     }
 
     @media (max-width: 400px) {
-        width: 380px;
+        width: 400px;
     }
 
     @media (max-width: 394px) {
@@ -56,9 +67,6 @@ flex-direction: column;
     }
 }
 
-.logo {
-    width: 500px;
-}
 
 input {
     background: #dfdfdf;
@@ -68,9 +76,13 @@ input {
     margin-top: 1vh;
     margin-bottom: 18px;
     border: none;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     text-indent: 10px;
-    color: #3c2166
+    color: #3c2166;
+
+    @media (max-width: 400px) {
+        width: 300px;
+    } 
 }
 
 button {
@@ -82,17 +94,33 @@ button {
     border: none;
     font-size: 20px;
     font-weight: bold;
-    color: #f3f3f3
-}
-
-button {
+    color: #f3f3f3;
     cursor: pointer;
     margin-bottom: 47px;
+
+    :hover {
+    background-color: red;
+    transition: 0.3s;
+    }
+
+    :active {
+    background-color: green;
+    }
+
+    @media (max-width: 400px) {
+        width: 300px;
+    } 
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    
 }
 
 span {
-    margin-left: 28px;
-    margin-right: 28px;
     font-weight: bold;
     color: #3c2166
 }
