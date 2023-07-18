@@ -96,20 +96,7 @@ button {
     font-weight: bold;
     color: #f3f3f3;
     cursor: pointer;
-    margin-bottom: 47px;
-
-    :hover {
-    background-color: red;
-    transition: 0.3s;
-    }
-
-    :active {
-    background-color: green;
-    }
-
-    @media (max-width: 400px) {
-        width: 300px;
-    } 
+    margin-bottom: 47px; 
 }
 
 .signup {
@@ -127,6 +114,14 @@ span {
 
 span {
     cursor: pointer;
+}
+
+.icons {
+    margin-right: 5px;
+}
+
+.icons:hover {
+    background-color: transparent;
 }
 
 `
