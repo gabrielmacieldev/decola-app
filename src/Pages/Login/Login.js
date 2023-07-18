@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
-import logo from '../../assests/Decola Juninho PNG.png'
-import { Container } from './LoginStyle'
+import logo from '../../assets/Decola Juninho PNG.png'
+import { Container, Image } from './LoginStyle'
+import background from '../../assets/DECOLA APLICATIVO 1 PNG.png'
+
+// import AcUnitIcon from '@mui/icons-material/AcUnit';
 
 const Login = () => {
 
@@ -8,30 +11,36 @@ const Login = () => {
     const [password, setPassword] = useState("")
 
     return (
-        <Container>
-            <img className='logo' src={logo}></img>
+        <>
+            <Image className='background' src={background}></Image>
 
-            <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder='   E-mail'
-            ></input>
+                <Container>
+                    <img className='logo' src={logo}></img>
 
-            <input
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder='   Senha'
-            ></input>
+                    <input
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder='   E-mail'
+                    ></input>
 
-            <button onClick={() => Login ()}>Entrar</button>
+                    <input
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder='   Senha'
+                    ></input>
 
-            <div>
-            <span>Não tem uma conta?</span>
+                    <button onClick={() => Login()}>Entrar</button>
 
-            <span>CADASTRAR</span>
-            </div>
-            
-        </Container>
+                    <div className='signup'>
+                        <span>Não tem uma conta?</span>
+
+                        <span>CADASTRAR</span>
+                    </div>
+
+                </Container>
+
+        </>
+
     )
 }
 
