@@ -8,8 +8,6 @@ import background from '../../assets/DECOLA APLICATIVO 1 PNG.png'
 
 import {FaSignOutAlt} from 'react-icons/fa'
 
-// import AcUnitIcon from '@mui/icons-material/AcUnit';
-
 const Login = () => {
 
     const [email, setEmail] = useState("")
