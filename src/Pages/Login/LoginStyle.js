@@ -3,16 +3,12 @@ import styled from "styled-components"
 export const Image = styled.img`
 
 z-index: -1;
-
-export default App;
-
 `
 export const Container = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-
 
 .logo {
     @media (max-width: 1600px) {
@@ -69,7 +65,6 @@ flex-direction: column;
     }
 }
 
-
 input {
     background: #dfdfdf;
     border-radius: 30px;
@@ -88,6 +83,9 @@ input {
 }
 
 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: orange;
     border-radius: 30px;
     width: 365px;
@@ -106,7 +104,6 @@ button {
     justify-content: center;
     align-items: center;
     gap: 22px;
-    
 }
 
 span {
