@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
-
 import logo from '../../assets/Decola Juninho PNG.png'
-
 import { Container, Image } from './LoginStyle'
-
 import background from '../../assets/DECOLA APLICATIVO 1 PNG.png'
-
-import {FaSignOutAlt} from 'react-icons/fa'
+import { FaSignOutAlt } from 'react-icons/fa'
 
 const Login = () => {
 
@@ -16,34 +12,32 @@ const Login = () => {
     return (
         <>
             <Image className='background' src={background}></Image>
+            <Container>
+                <img className='logo' src={logo}></img>
 
-                <Container>
-                    <img className='logo' src={logo}></img>
+                <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder='   E-mail'
+                ></input>
 
-                    <input
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder='   E-mail'
-                    ></input>
+                <input
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder='   Senha'
+                ></input>
 
-                    <input
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        placeholder='   Senha'
-                    ></input>
+                <button onClick={() => Login()}> <FaSignOutAlt class="icons" /> Entrar</button>
 
-                    <button onClick={() => Login()}> <FaSignOutAlt class="icons" /> Entrar</button>
+                <div className='signup'>
+                    <span>Não tem uma conta?</span>
 
-                    <div className='signup'>
-                        <span>Não tem uma conta?</span>
+                    <span>CADASTRAR</span>
+                </div>
 
-                        <span>CADASTRAR</span>
-                    </div>
-
-                </Container>
+            </Container>
 
         </>
-
     )
 }
 
