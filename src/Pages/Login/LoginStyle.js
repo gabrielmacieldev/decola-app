@@ -116,7 +116,7 @@ span {
 }
 
 .icons {
-    margin-right: 5px;
+    margin-right: 12px;
 }
 
 .icons:hover {
