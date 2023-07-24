@@ -11,24 +11,28 @@ const Login = () => {
 
     return (
         <>
-            <Image className='background' src={background}></Image>
+            <Image>
+                <img className='background' src={background}></img>
+            </Image>
             <Container>
-                <img className='logo' src={logo}></img>
 
-                <input
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder='   E-mail'
-                ></input>
+                <div className='form'>
 
-                <input
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder='   Senha'
-                ></input>
+                    <img className='logo' src={logo}></img>
+                    <input
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder='   E-mail'
+                    ></input>
 
-                <button onClick={() => Login()}> <FaSignOutAlt class="icons" /> Entrar</button>
+                    <input
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder='   Senha'
+                    ></input>
 
+                    <button onClick={() => Login()}> <FaSignOutAlt class="icons" /> Entrar</button>
+                </div>
                 <div className='signup'>
                     <span>Não tem uma conta?</span>
 

@@ -1,11 +1,10 @@
 import React from "react";
-import Login from "./Pages/Login/Login";
+import Router from "./router/Router";
 
 function App() {
   return (
     <>
-    
-    <Login/>
+    <Router/>
     </>
   );
 }
