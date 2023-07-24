@@ -1,108 +1,78 @@
 import styled from "styled-components"
 
-export const Image = styled.img`
-
-z-index: -1;
+export const Image = styled.div`
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: 0;
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 `
 export const Container = styled.div`
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
+position: relative;
 flex-direction: column;
+height: 100vh;
+z-index: 1;
+padding: 0 40px;
 
 .logo {
-    @media (max-width: 1600px) {
-        width: 782px;
-    }
-    @media (max-width: 1300px) {
-        width: 625px;
-    }
-    @media (max-width: 1000px) {
-        width: 500px;
-    }
-    @media (max-width: 800px) {
-        width: 470px;
-    }
-
-    @media (max-width: 600px) {
-        width: 450px;
-    }
-
-    @media (max-width: 400px) {
-        width: 400px;
-    }
-
-    @media (max-width: 394px) {
-        width: 385px;
-    }
-
-    @media (max-width: 385px) {
-        width: 375px;
-    }
-
-    @media (max-width: 387px) {
-        width: 375px;
-    }
-
-    @media (max-width: 376px) {
-        width: 370px;
-    }
-
-    @media (max-width: 280px) {
-        width: 270px;
-    }
-
-    @media (max-width: 270px) {
-        width: 250px;
-    }
-
-    @media (max-width: 250px) {
-        width: 230px;
-    }
-
-    @media (max-width: 230px) {
-        width: 150px;
-    }
+    max-width: 250px;
+    width: 70%;
+}
+.form {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    max-width: 365px;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
 }
 
 input {
-    background: #dfdfdf;
+    background: #5e3e98;
     border-radius: 30px;
-    width: 365px;
+    width: 100%;
     height: 55px;
-    margin-top: 1vh;
-    margin-bottom: 18px;
-    border: none;
-    /* padding-left: 10px; */
+    border: 2px solid white;
     text-indent: 10px;
     color: #3c2166;
 
-    @media (max-width: 400px) {
-        width: 300px;
-    } 
+}
+
+input::placeholder {
+color: #f3f3f3;
+font-style: italic;
 }
 
 button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: orange;
+    background: #ff6300;
     border-radius: 30px;
-    width: 365px;
+    border: 2px solid white;
+    width: 100%;
     height: 55px;
-    margin-top: 1vh;
-    border: none;
     font-size: 20px;
     font-weight: bold;
     color: #f3f3f3;
     cursor: pointer;
-    margin-bottom: 47px; 
+    
 }
 
 .signup {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
     gap: 22px;
 }
 
@@ -116,7 +86,7 @@ span {
 }
 
 .icons {
-    margin-right: 5px;
+    margin-right: 12px;
 }
 
 .icons:hover {

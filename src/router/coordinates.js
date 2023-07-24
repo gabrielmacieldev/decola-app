@@ -4,3 +4,6 @@ export const goToLogin = (navigate) => {
 export const goToSignup = (navigate) => {
     navigate("/signup")
 }
+export const goToForm = (navigate) => {
+    navigate("/form")
+}
