@@ -7,3 +7,6 @@ export const goToSignup = (navigate) => {
 export const goToForm = (navigate) => {
     navigate("/form")
 }
+export const goToContactDetails = (navigate) => {
+    navigate("/contactDetails")
+}
