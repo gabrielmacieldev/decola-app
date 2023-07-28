@@ -7,6 +7,11 @@ const ContactDetails = () => {
 
     const [aboutYou, setAboutYou] = useState("")
     const [name, setName] = useState("")
+    const [surname, setSurname] = useState("")
+    const [email, setEmail] = useState("")
+    const [cell, setCell] = useState("")
+    const [state, setState] = useState("")
+    const [city, setCity] = useState("")
 
     return (
 
@@ -36,6 +41,36 @@ const ContactDetails = () => {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder='   Name'
+                    ></input>
+
+                    <input
+                        value={surname}
+                        onChange={(e) => setSurname(e.target.value)}
+                        placeholder='   Sobrenome'
+                    ></input>
+
+                    <input
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder='   E-mail'
+                    ></input>
+
+                    <input
+                        value={cell}
+                        onChange={(e) => setCell(e.target.value)}
+                        placeholder='   Celular'
+                    ></input>
+
+                    <input
+                        value={state}
+                        onChange={(e) => setState(e.target.value)}
+                        placeholder='   Estado'
+                    ></input>
+
+                    <input
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                        placeholder='   Cidade'
                     ></input>
             </div>
 

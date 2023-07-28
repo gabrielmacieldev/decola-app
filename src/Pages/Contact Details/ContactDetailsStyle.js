@@ -70,7 +70,6 @@ background: lightgrey;
     margin-top: 2rem;
     border-radius: 25px;
     padding: 30px;
-    margin-bottom: 50px;
 
     input {
         width: 376px;
@@ -81,13 +80,19 @@ background: lightgrey;
 }
 
 .contato {
-    display: flex;
+    display: block;
     justify-content: flex-start;
     flex-direction: column;
     background: rgba(255, 255, 255, .30);
     border: 2px solid #ffffff30;
     color: #3c2166;
     backdrop-filter: blur(15px);
+    width: 24rem;
+    min-height: 10rem;
+    margin-top: 2rem;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 50px;
 }
 
 `
