@@ -1,19 +1,24 @@
 import React, { useState } from 'react'
-import { Container } from './ContactDetailsStyle'
+import { Container, Image } from './ContactDetailsStyle'
 import logo from '../../assets/Decola Juninho PNG.png'
+import background from '../../assets/BG FILTRO SOMENTE BAXO.png'
 
 const ContactDetails = () => {
 
     const [aboutYou, setAboutYou] = useState("")
+    const [name, setName] = useState("")
 
     return (
+
+        <>
+            
 
         <Container>
 
             <div className='card'>
-                <h1>Foto de Perfil</h1>
+                <h1>Foto de perfil</h1>
                 <img src={logo} width='150'></img>
-                <p>Ter uma foto de perfil ajuda no crescimento da sua carreira</p>
+                <p>Ter uma foto de perfil ajuda no crescimento da sua carreira.</p>
                 <button>Alterar foto de perfil</button>
             </div>
 
@@ -25,8 +30,17 @@ const ContactDetails = () => {
                 ></input>
             </div>
 
-        </Container>
+            <div className='contato'>
+            <h1>Dados de contato</h1>
+                    <input
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder='   Name'
+                    ></input>
+            </div>
 
+        </Container>
+        </>
     )
 }
 
