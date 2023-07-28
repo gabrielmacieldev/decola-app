@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../../assets/Decola Juninho PNG.png'
-import { Container, Image } from './LoginStyle'
+import { Container, Image } from './SignupStyle'
 import background from '../../assets/DECOLA APLICATIVO 1 PNG.png'
-import { FaSignOutAlt } from 'react-icons/fa'
 
 const Login = () => {
 
@@ -18,7 +17,8 @@ const Login = () => {
 
                 <div className='form'>
 
-                    <img className='logo' src={logo}></img>
+                <img className='logo' src={logo}></img>
+
                     <input
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
