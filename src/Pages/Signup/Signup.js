@@ -19,6 +19,7 @@ export const Signup = () => {
         <div className='form'>
 
           <img className='logo' src={logo}></img>
+
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
