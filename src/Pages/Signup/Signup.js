@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import logo from '../../assets/Decola Juninho PNG.png'
 import { Container, Image } from './SignupStyle'
-import background from '../../assets/DECOLA APLICATIVO 1 PNG.png'
+import background from '../../assets/BG  DECOLA COM O FOGUETE.png'
 
 export const Signup = () => {
 
@@ -17,8 +16,6 @@ export const Signup = () => {
       <Container>
 
         <div className='form'>
-
-          <img className='logo' src={logo}></img>
 
           <input
             value={email}
@@ -51,3 +48,5 @@ export const Signup = () => {
     </>
   )
 }
+
+export default Signup

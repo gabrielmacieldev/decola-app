@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import logo from '../../assets/Decola Juninho PNG.png'
 import { Container, Image } from './FormStyle'
-import background from '../../assets/DECOLA APLICATIVO 1 PNG.png'
+import background from '../../assets/BG  DECOLA COM O FOGUETE.png'
 import { FaSignOutAlt } from 'react-icons/fa'
 import foguete from '../../assets/foguete.png'
 
@@ -24,8 +23,6 @@ export const Form = () => {
             
                 <div className='form'>
 
-                    <img className='logo' src={logo}></img>
-
                     <button>Dados de Contatos</button>
                     <button>Formação</button>
                     <button>Experiência</button>
@@ -38,3 +35,5 @@ export const Form = () => {
     </>
   )
 }
+
+export default Form
