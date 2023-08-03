@@ -1,22 +1,13 @@
 import styled from "styled-components"
 
-export const Image = styled.div`
-position: absolute;
-width: 100%;
-height: 100%;
-z-index: 0;
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-`
-
 export const Container = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+padding-right: 1rem;
 flex-direction: column;
+position: relative;
+z-index: 1;
 background: lightgrey;
 
 .card {
@@ -35,20 +26,20 @@ background: lightgrey;
 
     h1{
         text-align: start;
-        margin-right: 190px;
+        align-self: flex-start;
         color: #3c2166;
     }
-
+    
     img {
         border-radius: 50%
     }
-
+    
     p{
         font-size: 25px;
         text-align: center;
         color: #3c2166;
     }
-
+    
     button {
         margin-bottom: 1rem;
         padding: 9px 40px;
@@ -59,6 +50,46 @@ background: lightgrey;
         color: #f3f3f3;
         cursor: pointer;
     }
+
+    @media (max-width: 550px) {
+        width: 20rem;
+        padding-left: 2rem;
+
+        h1 { 
+           font-size: 30px;
+           text-align: center;
+        }
+
+        p {
+            font-size: 22px;
+        }
+}
+    @media (max-width: 470px) {
+        width: 16rem;
+       margin-left: 1rem;
+}
+    @media (max-width: 402px) {
+        width: 12rem;
+        margin-left: 3rem;
+        h1{
+            font-size: 22px;
+        }
+
+        p{
+            font-size: 19px;
+        }
+
+        button {
+            /* padding: 9px 40px; */
+            padding: 8px 22px ;
+        }
+
+        img {
+        width: 200px;
+    }
+    
+}
+
 }
 
 .sobre {
