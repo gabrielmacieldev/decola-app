@@ -71,7 +71,7 @@ ul, li, a {
     display: flex;
     justify-content: flex-end;
     margin-left: 90px;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 30px;
     cursor: pointer;
     color: #f3f3f3;

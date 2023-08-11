@@ -1,22 +1,13 @@
 import styled from "styled-components"
 
-export const Image = styled.div`
-position: absolute;
-width: 100%;
-height: 100%;
-z-index: 0;
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-`
-
 export const Container = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+padding-right: 1rem;
 flex-direction: column;
+position: relative;
+z-index: 1;
 background: lightgrey;
 
 .card {
@@ -35,20 +26,20 @@ background: lightgrey;
 
     h1{
         text-align: start;
-        margin-right: 190px;
+        align-self: flex-start;
         color: #3c2166;
     }
-
+    
     img {
         border-radius: 50%
     }
-
+    
     p{
         font-size: 25px;
         text-align: center;
         color: #3c2166;
     }
-
+    
     button {
         margin-bottom: 1rem;
         padding: 9px 40px;
@@ -59,8 +50,43 @@ background: lightgrey;
         color: #f3f3f3;
         cursor: pointer;
     }
-}
 
+    @media (max-width: 550px) {
+        width: 20rem;
+        padding-left: 2rem;
+
+        h1 { 
+           font-size: 30px;
+           text-align: center;
+        }
+
+        p {
+            font-size: 22px;
+        }
+}
+    @media (max-width: 470px) {
+        width: 18rem;
+       margin-left: 0.8;
+}
+    @media (max-width: 402px) {
+        width: 16rem;
+        margin-left: 1rem;
+        h1{
+            font-size: 22px;
+        }
+        p{
+            font-size: 19px;
+        }
+
+        button {
+            padding: 8px 22px ;
+        }
+
+        img {
+        width: 200px;
+    } 
+}
+}
 .sobre {
     display: flex;
     justify-content: flex-start;
@@ -76,7 +102,7 @@ background: lightgrey;
     padding: 30px;
 
     textarea {
-        width: 340px;
+        width: 320px;
         height: 200px;
         background: rgba(255, 255, 255, .20);
         border: 2px solid #f3f3f330;
@@ -84,6 +110,32 @@ background: lightgrey;
         padding: 15px;
         resize: none;
     }
+
+    @media (max-width: 550px) {
+        width: 20rem;
+        padding-left: 2rem;
+
+        textarea {
+            width: 250px;
+        }
+
+}
+    @media (max-width: 470px) {
+        width: 18rem;
+       margin-left: 0.8;
+
+       textarea {
+        width: 220px;
+       }
+}
+    @media (max-width: 402px) {
+        width: 16rem;
+        margin-left: 1rem;
+
+        textarea {
+        width: 190px;
+        }
+}
 }
 
 .contato {
@@ -100,10 +152,38 @@ background: lightgrey;
     border-radius: 25px;
     padding: 30px;
 
+    h1 {
+        font-size: 32px;
+    }
+
     input {
         margin: 8px;
         padding: 12px;
     }
+
+    @media (max-width: 550px) {
+        width: 20rem;
+        padding-left: 2rem;
+
+}
+    @media (max-width: 470px) {
+        width: 18rem;
+       margin-left: 0.8;
+
+       h1 {
+        font-size: 26px;
+       }
+}
+    @media (max-width: 402px) {
+        width: 16rem;
+        margin-left: 1rem;
+
+        h1 {
+            font-size: 22px;
+            font-weight: 900;
+            font-style: bold;
+        }
+}
 }
 
 .social {
@@ -124,6 +204,30 @@ background: lightgrey;
         margin: 8px;
         padding: 12px;
     }
+
+    @media (max-width: 550px) {
+        width: 20rem;
+        padding-left: 2rem;
+
+}
+    @media (max-width: 470px) {
+        width: 18rem;
+       margin-left: 0.8;
+
+       h1 {
+        font-size: 26px;
+       }
+}
+    @media (max-width: 402px) {
+        width: 16rem;
+        margin-left: 1rem;
+
+        h1 {
+            font-size: 22px;
+            font-weight: 900;
+            font-style: bold;
+        }
+}
 }
 
 .dispo {
@@ -144,11 +248,36 @@ background: lightgrey;
         margin: 8px;
         padding: 12px;
     }
+
+    @media (max-width: 550px) {
+        width: 20rem;
+        padding-left: 2rem;
+
+}
+    @media (max-width: 470px) {
+        width: 18rem;
+       margin-left: 0.8;
+
+       h1 {
+        font-size: 26px;
+       }
+}
+    @media (max-width: 402px) {
+        width: 16rem;
+        margin-left: 1rem;
+
+        h1 {
+            font-size: 22px;
+            font-weight: 900;
+            font-style: bold;
+        }
+}
 }
 
 .mod {
-    display: block;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background: rgba(255, 255, 255, .30);
     border: 2px solid #ffffff30;
@@ -161,10 +290,49 @@ background: lightgrey;
     padding: 30px;
 
     input {
-        width: 340px;
-        margin: 8px;
+        width: 345px;
         padding: 12px;
     }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    @media (max-width: 550px) {
+        width: 20rem;
+        padding-left: 2rem;
+
+        input {
+            width: 290px;
+        }
+
+}
+    @media (max-width: 470px) {
+        width: 18rem;
+       margin-left: 0.8;
+
+       h1 {
+        font-size: 26px;
+       }
+
+       input {
+        width: 250px;
+       }
+}
+    @media (max-width: 402px) {
+        width: 16rem;
+        margin-left: 1rem;
+
+        h1 {
+            font-size: 22px;
+            font-weight: 900;
+            font-style: bold;
+        }
+
+        input {
+        width: 220px;
+       }
+}
 }
 
 .anexo {
@@ -209,6 +377,52 @@ background: lightgrey;
     .icons:hover {
         background-color: transparent;
     }
+
+    @media (max-width: 550px) {
+        width: 20rem;
+        padding-left: 2rem;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        button {
+            width: 70%;
+            font-size: 15px;
+            height: 50px;
+        }
+}
+    @media (max-width: 470px) {
+        width: 18rem;
+       margin-left: 0.8;
+
+       h1 {
+        font-size: 27px;
+       }
+
+       button {
+            width: 70%;
+            font-size: 14px;
+            height: 50px;
+        }
+     
+}
+    @media (max-width: 402px) {
+        width: 16rem;
+        margin-left: 1rem;
+
+        h1 {
+            font-size: 23px;
+            font-weight: 900;
+            font-style: bold;
+        }
+
+        button {
+            width: 80%;
+            font-size: 14px;
+            height: 50px;
+        }
+}
 }
 
 .btn {
@@ -217,11 +431,9 @@ background: lightgrey;
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 12px;
-}
-
 .voltar {
     margin: 0 8px;
-    padding: 12px 65px;
+    padding: 1px 58px;
     height: 55px;
     font-size: 20px;
     border-radius: 15px;
@@ -231,10 +443,9 @@ background: lightgrey;
     font-weight: 900;
     cursor: pointer;
 }
-
 .proximo {
     margin: 0 8px;
-    padding: 12px 65px;
+    padding: 1px 58px;
     height: 55px;
     font-size: 20px;
     border-radius: 15px;
@@ -244,10 +455,35 @@ background: lightgrey;
     font-weight: 900;
     cursor: pointer;
 }
-
 .proximo:hover {
     background-color: #f3f3f3;
     color: #3c2166;
 }
+@media (max-width: 550px) {
+        .proximo {
+            padding: 1px 40px;  
+        }
+        .voltar {
+            padding: 1px 40px;
+        }     
+}
+    @media (max-width: 470px) {
+        .proximo {
+            padding: 1px 34px;  
+        }
+        .voltar {
+            padding: 1px 34px;
+        }   
+}
+    @media (max-width: 402px) {
+        margin-left: 0.9rem;
 
+        .proximo {
+            padding: 1px 26px;  
+        }
+        .voltar {
+            padding: 1px 26px;
+        }
+}
+}
 `
