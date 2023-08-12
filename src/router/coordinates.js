@@ -10,3 +10,6 @@ export const goToForm = (navigate) => {
 export const goToContactDetails = (navigate) => {
     navigate("/contactDetails")
 }
+export const goToTraining = (navigate) => {
+    navigate("/Training")
+}
