@@ -4,6 +4,7 @@ import { Signup } from "../Pages/Signup/Signup";
 import { Form } from "../Pages/Form/Form"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactDetails from "../Pages/Contact Details/ContactDetails";
+import Training from "../Pages/Training/Training";
 
 const Router = () => {
 
@@ -14,6 +15,7 @@ const Router = () => {
                 <Route path="/signup" element={<Signup/>} />
                 <Route path="/form" element={<Form/>} />
                 <Route path="/contactdetails" element={<ContactDetails/>} />
+                <Route path="/Training" element={<Training/>} />
             </Routes>
         </BrowserRouter>
     )
