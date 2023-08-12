@@ -7,31 +7,31 @@ import foguete from '../../assets/foguete.png'
 export const Form = () => {
   return (
     <>
-            <Image>
-                <img className='background' src={background}></img>
-            </Image>
+      <Image>
+        <img className='background' src={background}></img>
+      </Image>
 
-            <Container>
+      <Container>
 
-            <div>
-              <ul>
-                <li>
-                  <a> <FaSignOutAlt class="icons" /></a>
-                </li>
-              </ul>
-            </div>
-            
-                <div className='form'>
+        <div>
+          <ul>
+            <li>
+              <a> <FaSignOutAlt class="icons" /></a>
+            </li>
+          </ul>
+        </div>
 
-                    <button>Dados de Contatos</button>
-                    <button>Formação</button>
-                    <button>Experiência</button>
-                    <button>Sobre você</button>
+        <div className='form'>
 
-                    <img className='foguete' src={foguete}></img>
-                </div>
+          <button>Dados de Contatos</button>
+          <button>Formação</button>
+          <button>Experiência</button>
+          <button>Sobre você</button>
 
-            </Container>
+          <img className='foguete' src={foguete}></img>
+        </div>
+
+      </Container>
     </>
   )
 }
