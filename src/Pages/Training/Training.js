@@ -91,7 +91,11 @@ const Training = () => {
 
                     <button className='btn-btn'> <FaMinus class="icons" /> Remover</button>
 
+
                     <button className='btn'>Adicionar formação</button>
+
+                    <button className='btn'>Adicionar idioma</button>
+
             </div>
 
             <div className='ferramentas'>
@@ -112,7 +116,11 @@ const Training = () => {
 
                     <button className='btn-btn'> <FaMinus class="icons" /> Remover</button>
 
+
                     <button className='btn'>Adicionar formação</button>
+
+                    <button className='btn'>Adicionar ferramenta</button>
+
             </div>
             
             <div className='bt'>
