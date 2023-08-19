@@ -12,16 +12,12 @@ export const goToContactDetails = (navigate) => {
 }
 export const goToTraining = (navigate) => {
     navigate("/Training")
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 }
 export const goToExperience = (navigate) => {
     navigate("/Experience")
->>>>>>> Training
-=======
+
 }
 export const goToExperience = (navigate) => {
     navigate("/Experience")
->>>>>>> Experience
 }

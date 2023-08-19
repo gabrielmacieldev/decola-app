@@ -5,14 +5,11 @@ import { Form } from "../Pages/Form/Form"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactDetails from "../Pages/Contact Details/ContactDetails";
 import Training from "../Pages/Training/Training";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 import Experience from "../Pages/Experience/Experience";
->>>>>>> Training
-=======
+
 import Experience from "../Pages/Experience/Experience";
->>>>>>> Experience
+
 
 const Router = () => {
 
@@ -24,14 +21,11 @@ const Router = () => {
                 <Route path="/form" element={<Form/>} />
                 <Route path="/contactdetails" element={<ContactDetails/>} />
                 <Route path="/Training" element={<Training/>} />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
                 <Route path="/Experience" element={<Experience/>} />
->>>>>>> Training
-=======
+
                 <Route path="/Experience" element={<Experience/>} />
->>>>>>> Experience
+
             </Routes>
         </BrowserRouter>
     )
