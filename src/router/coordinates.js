@@ -12,4 +12,12 @@ export const goToContactDetails = (navigate) => {
 }
 export const goToTraining = (navigate) => {
     navigate("/Training")
+
+}
+export const goToExperience = (navigate) => {
+    navigate("/Experience")
+
+}
+export const goToExperience = (navigate) => {
+    navigate("/Experience")
 }
