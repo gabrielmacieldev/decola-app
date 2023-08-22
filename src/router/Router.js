@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactDetails from "../Pages/Contact Details/ContactDetails";
 import Training from "../Pages/Training/Training";
 import Experience from "../Pages/Experience/Experience";
+import Rocket from "../Pages/Rocket/Rocket";
 
 const Router = () => {
 
@@ -18,6 +19,7 @@ const Router = () => {
                 <Route path="/contactdetails" element={<ContactDetails/>} />
                 <Route path="/Training" element={<Training/>} />
                 <Route path="/Experience" element={<Experience/>} />
+                <Route path="/Rocket" element={<Rocket/>} />
             </Routes>
         </BrowserRouter>
     )
