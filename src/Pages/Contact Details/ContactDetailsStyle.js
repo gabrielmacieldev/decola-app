@@ -357,6 +357,7 @@ background: lightgrey;
         background: #3c2166;
         border-radius: 15px;
         border: 2px solid white;
+        margin-top: 1rem;
         width: 70%;
         height: 55px;
         font-size: 20px;
