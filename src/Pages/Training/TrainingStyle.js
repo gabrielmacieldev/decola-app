@@ -6,7 +6,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 background: lightgrey;
-min-height: 120vh;
+position: relative;
 
 .formacao {
     display: flex;
@@ -35,102 +35,84 @@ min-height: 120vh;
         padding: 12px;
         
     }
-    
-    @media screen and (max-width: 1075px) {
-        h1 {
-            margin-bottom: 30px;
-        }
-    }
-    @media screen and (max-width: 767px) {
-        width: 25rem;
-        padding-left: 2rem;
-
-        .btn-btn {
-            margin-left: -6px;
-        }
-
-        .btn {
-            margin-right: 13rem;
-            width: 105%;
-        }
-
-    }
-    @media screen and (max-width: 551px) {
-        width: 23rem;
-        margin-left: 0.8;
-
-        h1 {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    .btn-btn {
-            margin-left: -15px;
-        }
-
-        .btn {
-            margin-right: 212px;
-            width: 115%;
-        }
-    }
-@media screen and (max-width: 547px) {
-    h1 {
-        font-size: 30px;
-    }
-    }
-    @media screen and (max-width: 400px) {
-        width: 15rem;
-        margin-left: 1rem;
-
-        input {
-            width: 218px;
-        }
-
-        h1 {
-            font-size: 23px;
-            margin-right: 118px;
-            text-align: center;
-        }
-        .btn-btn {
-            margin-left: 80px;
-            width: 50%;
-            font-size: 12px;
-        }
-        .btn {
-            width: 130%;
+    button {
+            margin-right: 214px;
+            background: #f3f3f3;
+            border-radius: 15px;
+            border: 2px solid white;
+            width: 36%;
+            height: 45px;
             font-size: 16px;
+            font-weight: 900;
+            color: #3c2166;
+            cursor: pointer;
+            margin-top: 12px;
+            margin-bottom: 30px;
+            margin-left: 18px;
+    }
+    .btn-formacao {
+            margin-left: 209px;
+            background: #3c2166;
+            border-radius: 15px;
+            border: 2px solid white;
+            width: 83%;
+            height: 55px;
+            font-size: 20px;
+            font-weight: 900;
+            color: #f3f3f3;
+            cursor: pointer;
+            margin-top: 8px;
+            margin-bottom: 8px;
+    } 
+
+    @media (max-width: 550px) {
+        width: 26rem;
+        h1 { 
+           font-size: 28px;
+           text-align: center;
         }
+
+        p {
+            font-size: 21px;
+        }
+}
+    @media (max-width: 470px) {
+        width: 20rem;
+       h1 { 
+           font-size: 25px;
+           text-align: center;
+        }
+    input {
+        width: 250px;
+    }
+    button {
+        width: 50%;
+        font-size: 15px;
+        margin-left: 6rem;
+    }
+    .btn-formacao {
+        font-size: 15px;
+        width: 80%;
     }
 }
-
-button {
-        margin-right: 214px;
-        background: #f3f3f3;
-        border-radius: 15px;
-        border: 2px solid white;
-        width: 36%;
-        height: 45px;
-        font-size: 16px;
-        font-weight: 900;
-        color: #3c2166;
-        cursor: pointer;
-        margin-top: 12px;
-        margin-bottom: 30px;
-        margin-left: 18px;
+    @media (max-width: 402px) {
+        width: 18rem;
+        h1{
+            font-size: 22px;  
+        }
+        p{
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        button {
+            width: 50%;
+            font-size: 15px;
+            margin-left: 6rem;
+        }
+        img {
+        width: 200px;
+    } 
 }
-
-.btn {
-        margin-left: 209px;
-        background: #3c2166;
-        border-radius: 15px;
-        border: 2px solid white;
-        width: 83%;
-        height: 55px;
-        font-size: 20px;
-        font-weight: 900;
-        color: #f3f3f3;
-        cursor: pointer;
-        margin-top: 8px;
-        margin-bottom: 8px;
 }
 
 .idioma {
@@ -160,73 +142,84 @@ button {
         padding: 12px;
         
     }
-    
-    @media screen and (max-width: 1075px) {
-        h1 {
-            margin-bottom: 30px;
-        }
-    }
-    @media screen and (max-width: 767px) {
-        width: 25rem;
-        padding-left: 2rem;
-
-        .btn-btn {
-            margin-left: -6px;
-        }
-
-        .btn {
-            margin-right: 13rem;
-            width: 105%;
-        }
-
-    }
-    @media screen and (max-width: 551px) {
-        width: 23rem;
-        margin-left: 0.8;
-
-        h1 {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    .btn-btn {
-            margin-left: -15px;
-        }
-
-        .btn {
-            margin-right: 212px;
-            width: 115%;
-        }
-    }
-@media screen and (max-width: 547px) {
-    h1 {
-        font-size: 30px;
-    }
-    }
-    @media screen and (max-width: 400px) {
-        width: 15rem;
-        margin-left: 1rem;
-
-        input {
-            width: 218px;
-        }
-
-        h1 {
-            font-size: 23px;
-            margin-right: 118px;
-            text-align: center;
-        }
-        .btn-btn {
-            margin-left: 80px;
-            width: 50%;
-            font-size: 12px;
-        }
-        .btn {
-            width: 130%;
+    button {
+            margin-right: 214px;
+            background: #f3f3f3;
+            border-radius: 15px;
+            border: 2px solid white;
+            width: 36%;
+            height: 45px;
             font-size: 16px;
+            font-weight: 900;
+            color: #3c2166;
+            cursor: pointer;
+            margin-top: 12px;
+            margin-bottom: 30px;
+            margin-left: 18px;
+    }
+    .btn-idioma {
+            margin-left: 209px;
+            background: #3c2166;
+            border-radius: 15px;
+            border: 2px solid white;
+            width: 83%;
+            height: 55px;
+            font-size: 20px;
+            font-weight: 900;
+            color: #f3f3f3;
+            cursor: pointer;
+            margin-top: 8px;
+            margin-bottom: 8px;
+    } 
+
+    @media (max-width: 550px) {
+        width: 26rem;
+        h1 { 
+           font-size: 28px;
+           text-align: center;
         }
+        p {
+            font-size: 21px;
+        }
+}
+    @media (max-width: 470px) {
+        width: 20rem;
+    h1 { 
+           font-size: 25px;
+           text-align: center;
+        }
+    input {
+        width: 250px;
+    }
+    button {
+        width: 50%;
+        font-size: 15px;
+        margin-left: 6rem;
+    }
+    .btn-idioma {
+        font-size: 15px;
+        width: 80%;
     }
 }
-
+    @media (max-width: 402px) {
+        width: 18rem;
+        h1{
+            font-size: 22px;  
+        }
+        p{
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        button {
+            width: 50%;
+            font-size: 15px;
+            margin-left: 6rem;
+        }
+        img {
+        width: 200px;
+    } 
+}
+}
 .ferramentas {
     display: flex;
     justify-content: center;
@@ -252,87 +245,98 @@ button {
     input {
         width: 340px;
         margin: 8px;
-        padding: 12px;
-        
+        padding: 12px;  
     }
-    
-    @media screen and (max-width: 1075px) {
-        h1 {
-            margin-bottom: 30px;
-        }
-    }
-    @media screen and (max-width: 767px) {
-        width: 25rem;
-        padding-left: 2rem;
 
-        .btn-btn {
-            margin-left: -6px;
-        }
-
-        .btn {
-            margin-right: 13rem;
-            width: 105%;
-        }
-
-    }
-    @media screen and (max-width: 551px) {
-        width: 23rem;
-        margin-left: 0.8;
-
-        h1 {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    .btn-btn {
-            margin-left: -15px;
-        }
-
-        .btn {
-            margin-right: 212px;
-            width: 115%;
-        }
-    }
-@media screen and (max-width: 547px) {
-    h1 {
-        font-size: 30px;
-    }
-    }
-    @media screen and (max-width: 400px) {
-        width: 15rem;
-        margin-left: 1rem;
-
-        input {
-            width: 218px;
-        }
-
-        h1 {
-            font-size: 23px;
-            margin-right: 118px;
-            text-align: center;
-        }
-        .btn-btn {
-            margin-left: 80px;
-            width: 50%;
-            font-size: 12px;
-        }
-        .btn {
-            width: 130%;
+    button {
+            margin-right: 214px;
+            background: #f3f3f3;
+            border-radius: 15px;
+            border: 2px solid white;
+            width: 36%;
+            height: 45px;
             font-size: 16px;
+            font-weight: 900;
+            color: #3c2166;
+            cursor: pointer;
+            margin-top: 12px;
+            margin-bottom: 30px;
+            margin-left: 18px;
+    }
+    .btn-ferramentas {
+            margin-left: 209px;
+            background: #3c2166;
+            border-radius: 15px;
+            border: 2px solid white;
+            width: 83%;
+            height: 55px;
+            font-size: 20px;
+            font-weight: 900;
+            color: #f3f3f3;
+            cursor: pointer;
+            margin-top: 8px;
+            margin-bottom: 8px;
+    } 
+
+    @media (max-width: 550px) {
+        width: 26rem;
+        h1 { 
+           font-size: 28px;
+           text-align: center;
         }
+        p {
+            font-size: 21px;
+        }
+}
+    @media (max-width: 470px) {
+        width: 20rem;
+       h1 { 
+           font-size: 25px;
+           text-align: center;
+        }
+    input {
+        width: 250px;
+    }
+    button {
+        width: 50%;
+        font-size: 15px;
+        margin-left: 6rem;
+    }
+    .btn-ferramentas {
+        font-size: 15px;
+        width: 80%;
     }
 }
+    @media (max-width: 402px) {
+        width: 18rem;
+        h1{
+            font-size: 22px;  
+        }
+        p{
+            font-size: 18px;
+            margin-top: 1rem;
+        }
+        button {
+            width: 50%;
+            font-size: 15px;
+            margin-left: 6rem;
+        }
+        .btn-ferramentas {
+        font-size: 15px;
+        width: 90%;
+    }
+}
+}
 
-.bt {
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 12px;
-}
-
 .voltar {
     margin: 0 8px;
-    padding: 12px 65px;
+    padding: 1px 70px;
     height: 55px;
     font-size: 20px;
     border-radius: 15px;
@@ -341,12 +345,10 @@ button {
     color: #3c2166;
     font-weight: 900;
     cursor: pointer;
-    margin-right: 73px;
 }
-
 .proximo {
     margin: 0 8px;
-    padding: 12px 65px;
+    padding: 1px 70px;
     height: 55px;
     font-size: 20px;
     border-radius: 15px;
@@ -356,9 +358,34 @@ button {
     font-weight: 900;
     cursor: pointer;
 }
-
 .proximo:hover {
     background-color: #f3f3f3;
     color: #3c2166;
+}
+@media (max-width: 550px) {
+        .proximo {
+            padding: 1px 55px;  
+        }
+        .voltar {
+            padding: 1px 55px;
+        }     
+}
+    @media (max-width: 470px) {
+        .proximo {
+            padding: 1px 35px;  
+        }
+        .voltar {
+            padding: 1px 35px;
+        }   
+}
+    @media (max-width: 402px) {
+
+        .proximo {
+            padding: 1px 25px;  
+        }
+        .voltar {
+            padding: 1px 25px;
+        }
+}
 }
 `

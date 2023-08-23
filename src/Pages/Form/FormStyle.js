@@ -21,10 +21,6 @@ height: 100vh;
 z-index: 1;
 padding: 0 40px;
 
-.logo {
-    max-width: 250px;
-    width: 70%;
-}
 .form {
     display: flex;
     height: 80%;
@@ -67,14 +63,14 @@ button:hover {
     margin-top: 12px;
 }
 
-ul, li, a {
+a {
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
     margin-left: 90px;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 35px;
     cursor: pointer;
     color: #f3f3f3;
 }
-
 `

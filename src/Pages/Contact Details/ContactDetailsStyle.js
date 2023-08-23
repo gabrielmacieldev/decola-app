@@ -4,11 +4,10 @@ export const Container = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-padding-right: 1rem;
 flex-direction: column;
-position: relative;
-z-index: 1;
 background: lightgrey;
+padding-right: 1rem;
+position: relative;
 
 .card {
     display: flex;
@@ -25,23 +24,22 @@ background: lightgrey;
     padding: 30px;
 
     h1{
-        text-align: start;
-        align-self: flex-start;
+        /* align-self: flex-start; */
+        font-size: 35px;
         color: #3c2166;
     }
-    
     img {
         border-radius: 50%
     }
-    
     p{
-        font-size: 25px;
+        font-size: 22px;
         text-align: center;
         color: #3c2166;
     }
     
     button {
         margin-bottom: 1rem;
+        margin-top: 1rem;
         padding: 9px 40px;
         border-radius: 12px;
         border: none;
@@ -56,12 +54,12 @@ background: lightgrey;
         padding-left: 2rem;
 
         h1 { 
-           font-size: 30px;
+           font-size: 28px;
            text-align: center;
         }
 
         p {
-            font-size: 22px;
+            font-size: 21px;
         }
 }
     @media (max-width: 470px) {
@@ -72,14 +70,16 @@ background: lightgrey;
         width: 16rem;
         margin-left: 1rem;
         h1{
-            font-size: 22px;
+            font-size: 22px;  
         }
         p{
-            font-size: 19px;
+            font-size: 18px;
+            margin-top: 1rem;
         }
 
         button {
-            padding: 8px 22px ;
+            padding: 6px 20px ;
+            margin-top: 1rem;
         }
 
         img {
@@ -101,6 +101,11 @@ background: lightgrey;
     border-radius: 25px;
     padding: 30px;
 
+    h1 {
+        font-size: 35px;
+        
+    }
+
     textarea {
         width: 320px;
         height: 200px;
@@ -114,6 +119,10 @@ background: lightgrey;
     @media (max-width: 550px) {
         width: 20rem;
         padding-left: 2rem;
+
+        h1 { 
+           font-size: 28px;
+        }
 
         textarea {
             width: 250px;
@@ -131,6 +140,11 @@ background: lightgrey;
     @media (max-width: 402px) {
         width: 16rem;
         margin-left: 1rem;
+
+        h1 { 
+           font-size: 22px;
+           
+        }
 
         textarea {
         width: 190px;
@@ -153,7 +167,7 @@ background: lightgrey;
     padding: 30px;
 
     h1 {
-        font-size: 32px;
+        font-size: 35px;
     }
 
     input {
@@ -164,6 +178,10 @@ background: lightgrey;
     @media (max-width: 550px) {
         width: 20rem;
         padding-left: 2rem;
+
+        h1 { 
+           font-size: 28px;
+        }
 
 }
     @media (max-width: 470px) {
@@ -179,9 +197,7 @@ background: lightgrey;
         margin-left: 1rem;
 
         h1 {
-            font-size: 22px;
-            font-weight: 900;
-            font-style: bold;
+            font-size: 22px;  
         }
 }
 }
@@ -200,6 +216,10 @@ background: lightgrey;
     border-radius: 25px;
     padding: 30px;
 
+    h1 {
+        font-size: 35px;
+    }
+
     input {
         margin: 8px;
         padding: 12px;
@@ -208,6 +228,10 @@ background: lightgrey;
     @media (max-width: 550px) {
         width: 20rem;
         padding-left: 2rem;
+
+        h1 { 
+           font-size: 28px;
+        }
 
 }
     @media (max-width: 470px) {
@@ -223,9 +247,7 @@ background: lightgrey;
         margin-left: 1rem;
 
         h1 {
-            font-size: 22px;
-            font-weight: 900;
-            font-style: bold;
+            font-size: 22px;  
         }
 }
 }
@@ -244,6 +266,14 @@ background: lightgrey;
     border-radius: 25px;
     padding: 30px;
 
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
     input {
         margin: 8px;
         padding: 12px;
@@ -252,6 +282,10 @@ background: lightgrey;
     @media (max-width: 550px) {
         width: 20rem;
         padding-left: 2rem;
+
+        h1 { 
+           font-size: 28px;
+        }
 
 }
     @media (max-width: 470px) {
@@ -267,9 +301,11 @@ background: lightgrey;
         margin-left: 1rem;
 
         h1 {
-            font-size: 22px;
-            font-weight: 900;
-            font-style: bold;
+            font-size: 22px;  
+        }
+
+        p {
+            font-size: 16px;
         }
 }
 }
@@ -295,12 +331,16 @@ background: lightgrey;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 34px;
     }
 
     @media (max-width: 550px) {
         width: 20rem;
         padding-left: 2rem;
+
+        h1 { 
+           font-size: 28px;
+        }
 
         input {
             width: 290px;
@@ -325,8 +365,7 @@ background: lightgrey;
 
         h1 {
             font-size: 22px;
-            font-weight: 900;
-            font-style: bold;
+          
         }
 
         input {
@@ -371,8 +410,16 @@ background: lightgrey;
         color: #3c2166;
     }
 
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
     .icons {
-        margin-right: 8px;
+        margin-right: 4px;
     }
     
     .icons:hover {
@@ -383,8 +430,8 @@ background: lightgrey;
         width: 20rem;
         padding-left: 2rem;
 
-        h1 {
-            font-size: 30px;
+        h1 { 
+           font-size: 28px;
         }
 
         button {
@@ -413,9 +460,12 @@ background: lightgrey;
         margin-left: 1rem;
 
         h1 {
-            font-size: 23px;
-            font-weight: 900;
-            font-style: bold;
+            font-size: 22px;
+           
+        }
+
+        p {
+            font-size: 16px;
         }
 
         button {
@@ -434,7 +484,7 @@ background: lightgrey;
     margin-top: 12px;
 .voltar {
     margin: 0 8px;
-    padding: 1px 58px;
+    padding: 1px 50px;
     height: 55px;
     font-size: 20px;
     border-radius: 15px;
@@ -446,7 +496,7 @@ background: lightgrey;
 }
 .proximo {
     margin: 0 8px;
-    padding: 1px 58px;
+    padding: 1px 50px;
     height: 55px;
     font-size: 20px;
     border-radius: 15px;
@@ -462,28 +512,28 @@ background: lightgrey;
 }
 @media (max-width: 550px) {
         .proximo {
-            padding: 1px 40px;  
+            padding: 1px 35px;  
         }
         .voltar {
-            padding: 1px 40px;
+            padding: 1px 35px;
         }     
 }
     @media (max-width: 470px) {
         .proximo {
-            padding: 1px 34px;  
+            padding: 1px 28px;  
         }
         .voltar {
-            padding: 1px 34px;
+            padding: 1px 28px;
         }   
 }
     @media (max-width: 402px) {
         margin-left: 0.9rem;
 
         .proximo {
-            padding: 1px 26px;  
+            padding: 1px 20px;  
         }
         .voltar {
-            padding: 1px 26px;
+            padding: 1px 20px;
         }
 }
 }

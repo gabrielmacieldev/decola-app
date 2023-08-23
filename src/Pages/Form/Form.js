@@ -13,21 +13,12 @@ export const Form = () => {
 
       <Container>
 
-        <div>
-          <ul>
-            <li>
-              <a> <FaSignOutAlt class="icons" /></a>
-            </li>
-          </ul>
-        </div>
-
+        <a> <FaSignOutAlt class="icons" /></a>
         <div className='form'>
-
           <button>Dados de Contatos</button>
           <button>Formação</button>
           <button>Experiência</button>
           <button>Sobre você</button>
-
           <img className='foguete' src={foguete}></img>
         </div>
 

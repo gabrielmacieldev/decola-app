@@ -73,8 +73,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1rem;
     margin-bottom: 40px;
-    gap: 22px;
+    gap: 2rem;
 }
 
 span {

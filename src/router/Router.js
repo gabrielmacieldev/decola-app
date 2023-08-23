@@ -8,18 +8,12 @@ import Training from "../Pages/Training/Training";
 import Experience from "../Pages/Experience/Experience";
 import Rocket from "../Pages/Rocket/Rocket";
 
-
 const Router = () => {
 
     return (
+        
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/signup" element={<Signup />} />
-                <Route path="/form" element={<Form />} />
-                <Route path="/contactdetails" element={<ContactDetails />} />
-                <Route path="/raining" element={<Training />} />
-                <Route path="/Experience" element={<Experience />} />
                 <Route path="/" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/form" element={<Form />} />

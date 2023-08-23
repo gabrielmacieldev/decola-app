@@ -2,14 +2,13 @@ import React, { useEffect } from 'react'
 import { Container } from './RocketStyle'
 import rocket from '../../assets/rocket.png'
 
-
 const Rocket = () => {
 
-    function stars(){
+    function stars() {
         let count = 150;
         let scene = document.querySelector('.scene');
-        let i =0;
-        while(i < count){
+        let i = 0;
+        while (i < count) {
             let star = document.createElement('i');
             let x = Math.floor(Math.random() * window.innerWidth);
             let duration = Math.random() * 1;
@@ -19,7 +18,7 @@ const Rocket = () => {
             star.style.width = 1 + 'px';
             star.style.height = 60 + 'px';
             star.style.animationDuration = duration + 's';
-            
+
             scene.appendChild(star);
             i++;
         }
@@ -33,14 +32,13 @@ const Rocket = () => {
 
         <Container>
             <div class="scene">
-            <div class="rocket">
-            <img src={rocket} alt="rocket"></img>
+                <div class="rocket">
+                    <img src={rocket} alt="rocket"></img>
+                </div>
             </div>
-        </div>
-        
+
         </Container>
     )
 }
-
 
 export default Rocket

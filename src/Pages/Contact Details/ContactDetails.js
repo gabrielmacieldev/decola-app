@@ -21,138 +21,135 @@ const ContactDetails = () => {
     const [anexo, setAnexo] = useState("")
 
     return (
+        <Container>
 
-        <>
-            <Container>
+            <div className='card'>
+                <h1>Foto de perfil</h1>
+                <img src={logo} width='250'></img>
+                <p>Ter uma foto de perfil ajuda no crescimento da sua carreira.</p>
+                <button>Alterar foto de perfil</button>
+            </div>
 
-                <div className='card'>
-                    <h1>Foto de perfil</h1>
-                    <img src={logo} width='250'></img>
-                    <p>Ter uma foto de perfil ajuda no crescimento da sua carreira.</p>
-                    <button>Alterar foto de perfil</button>
-                </div>
+            <div className='sobre'>
+                <h1>Sobre você</h1>
+                <textarea
+                    value={aboutYou}
+                    onChange={(e) => setAboutYou(e.target.value)}
+                ></textarea>
+            </div>
 
-                <div className='sobre'>
-                    <h1>Sobre você</h1>
-                    <textarea
-                        value={aboutYou}
-                        onChange={(e) => setAboutYou(e.target.value)}
-                    ></textarea>
-                </div>
+            <div className='contato'>
+                <h1>Dados de contato</h1>
+                <input
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder='   Name'
+                ></input>
 
-                <div className='contato'>
-                    <h1>Dados de contato</h1>
-                    <input
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder='   Name'
-                    ></input>
+                <input
+                    value={surname}
+                    onChange={(e) => setSurname(e.target.value)}
+                    placeholder='   Sobrenome'
+                ></input>
 
-                    <input
-                        value={surname}
-                        onChange={(e) => setSurname(e.target.value)}
-                        placeholder='   Sobrenome'
-                    ></input>
+                <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder='   E-mail'
+                ></input>
 
-                    <input
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder='   E-mail'
-                    ></input>
+                <input
+                    value={cell}
+                    onChange={(e) => setCell(e.target.value)}
+                    placeholder='   Celular'
+                ></input>
 
-                    <input
-                        value={cell}
-                        onChange={(e) => setCell(e.target.value)}
-                        placeholder='   Celular'
-                    ></input>
+                <input
+                    value={state}
+                    onChange={(e) => setState(e.target.value)}
+                    placeholder='   Estado'
+                ></input>
 
-                    <input
-                        value={state}
-                        onChange={(e) => setState(e.target.value)}
-                        placeholder='   Estado'
-                    ></input>
+                <input
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                    placeholder='   Cidade'
+                ></input>
+            </div>
 
-                    <input
-                        value={city}
-                        onChange={(e) => setCity(e.target.value)}
-                        placeholder='   Cidade'
-                    ></input>
-                </div>
+            <div className='social'>
+                <h1>Perfis socias</h1>
+                <input
+                    value={linkedin}
+                    onChange={(e) => setLinkedin(e.target.value)}
+                    placeholder='   Linkedin'
+                ></input>
 
-                <div className='social'>
-                    <h1>Perfis socias</h1>
-                    <input
-                        value={linkedin}
-                        onChange={(e) => setLinkedin(e.target.value)}
-                        placeholder='   Linkedin'
-                    ></input>
+                <input
+                    value={instagram}
+                    onChange={(e) => setInstagram(e.target.value)}
+                    placeholder='   Instagram'
+                ></input>
 
-                    <input
-                        value={instagram}
-                        onChange={(e) => setInstagram(e.target.value)}
-                        placeholder='   Instagram'
-                    ></input>
+                <input
+                    value={portfolio}
+                    onChange={(e) => setPortfolio(e.target.value)}
+                    placeholder='   Portfólio'
+                ></input>
 
-                    <input
-                        value={portfolio}
-                        onChange={(e) => setPortfolio(e.target.value)}
-                        placeholder='   Portfólio'
-                    ></input>
+                <input
+                    value={github}
+                    onChange={(e) => setGithub(e.target.value)}
+                    placeholder='   Github'
+                ></input>
+            </div>
 
-                    <input
-                        value={github}
-                        onChange={(e) => setGithub(e.target.value)}
-                        placeholder='   Github'
-                    ></input>
-                </div>
+            <div className='dispo'>
+                <h1>Disponibilidade</h1>
+                <p>Tem disponibilidade de mudança (cidade ou estado)?</p>
+                <input
+                    type="radio" name="dispoyes" id="onyes"
+                ></input>
+                <label for="yes">Sim</label>
 
-                <div className='dispo'>
-                    <h1>Disponibilidade</h1>
-                    <p>Tem disponibilidade de mudança (cidade ou estado)?</p>
-                    <input
-                        type="radio" name="dispoyes" id="onyes"
-                    ></input>
-                    <label for="yes">Sim</label>
+                <input
+                    type="radio" name="disponot" id="twonot"
+                ></input>
+                <label for="not">Não</label>
 
-                    <input
-                        type="radio" name="disponot" id="twonot"
-                    ></input>
-                    <label for="not">Não</label>
+                <p>Está atualmente matriculado em alguma instituição de Ensino Superior?</p>
+                <input
+                    type="radio" name="dispo-yes" id="on-yes"
+                ></input>
+                <label for="yes">Sim</label>
 
-                    <p>Está atualmente matriculado em alguma instituição de Ensino Superior?</p>
-                    <input
-                        type="radio" name="dispo-yes" id="on-yes"
-                    ></input>
-                    <label for="yes">Sim</label>
+                <input
+                    type="radio" name="dispo-not" id="two-not"
+                ></input>
+                <label for="not">Não</label>
+            </div>
 
-                    <input
-                        type="radio" name="dispo-not" id="two-not"
-                    ></input>
-                    <label for="not">Não</label>
-                </div>
+            <div className='mod'>
+                <h1>Modalidade de estágio que busca?</h1>
+                <input
+                    value={mod}
+                    onChange={(e) => setMod(e.target.value)}
+                    placeholder='Presencial / Home Office / Flex Office ( Híbrido)'
+                ></input>
+            </div>
 
-                <div className='mod'>
-                    <h1>Modalidade de estágio que busca?</h1>
-                    <input
-                        value={mod}
-                        onChange={(e) => setMod(e.target.value)}
-                        placeholder='Presencial / Home Office / Flex Office ( Híbrido)'
-                    ></input>
-                </div>
+            <div className='anexo'>
+                <h1>Anexo do currículo</h1>
+                <p>Envie um currículo para ter maiores chances nas avaliações!</p>
+                <button> <FaRegFileAlt class="icons" /> Enviar um arquivo</button>
+            </div>
 
-                <div className='anexo'>
-                    <h1>Anexo do currículo</h1>
-                    <p>Envie um currículo para ter maiores chances nas avaliações!</p>
-                    <button> <FaRegFileAlt class="icons" /> Enviar um arquivo</button>
-                </div>
+            <div className='btn'>
+                <button className='voltar'>Voltar</button>
+                <button className='proximo'>Próximo</button>
+            </div>
 
-                <div className='btn'>
-                    <button className='voltar'>Voltar</button>
-                    <button className='proximo'>Próximo</button>
-                </div>
-
-            </Container>
-        </>
+        </Container>
     )
 }
 

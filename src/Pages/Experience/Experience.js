@@ -15,60 +15,57 @@ const Experience = () => {
 
         <Container>
 
-        <div className='experiencia'>
-                    <div className='h1'>
-                    </div>
-                    <h1>Experiências</h1>
+            <div className='experiencia'>
+                <div className='h1'>
+                </div>
+                <h1>Experiências</h1>
 
-                    <input
-                        value={empresa}
-                        onChange={(e) => setEmpresa(e.target.value)}
-                        placeholder='   Empresa contratante'
-                    ></input>
+                <input
+                    value={empresa}
+                    onChange={(e) => setEmpresa(e.target.value)}
+                    placeholder='   Empresa contratante'
+                ></input>
 
-                    <input
-                        value={inicio}
-                        onChange={(e) => setInicio(e.target.value)}
-                        placeholder='   Data de início'
-                    ></input>
+                <input
+                    value={inicio}
+                    onChange={(e) => setInicio(e.target.value)}
+                    placeholder='   Data de início'
+                ></input>
 
-                    <input
-                        value={termino}
-                        onChange={(e) => setTermino(e.target.value)}
-                        placeholder='   Data de término'
-                    ></input>
+                <input
+                    value={termino}
+                    onChange={(e) => setTermino(e.target.value)}
+                    placeholder='   Data de término'
+                ></input>
 
-                    <div class="cl-toggle-switch">
+                <div class="cl-toggle-switch">
                     <label class="cl-switch">
-                        <input type="checkbox"/>
+                        <input type="checkbox" />
                         <span></span>
                         <label className='checkbox_trabalho'>Trabalho atualmente neste cargo?</label>
                     </label>
-                    </div>
+                </div>
 
-                    <input
-                        value={cargo}
-                        onChange={(e) => setCargo(e.target.value)}
-                        placeholder='   Cargo exercido na empresa'
-                    ></input>
+                <input
+                    value={cargo}
+                    onChange={(e) => setCargo(e.target.value)}
+                    placeholder='   Cargo exercido na empresa'
+                ></input>
 
-                    <textarea
-                        value={atividade}
-                        onChange={(e) => setAtividade(e.target.value)}
-                        placeholder='   Descrição das atividades'
-                    ></textarea>
+                <textarea
+                    value={atividade}
+                    onChange={(e) => setAtividade(e.target.value)}
+                    placeholder='   Descrição das atividades'
+                ></textarea>
 
-
-                    <button className='btn-btn'> <FaMinus class="icons" /> Remover</button>
-
-                    <button className='btn'>Adicionar experiência</button>
+                <button> <FaMinus class="icons" /> Remover</button>
+                <button className='btn-experiencia'>Adicionar experiência</button>
             </div>
-            
-            <div className='bt'>
+
+            <div className='btn'>
                 <button className='voltar'>Voltar</button>
                 <button className='proximo'>Próximo</button>
             </div>
-
         </Container>
     )
 }
