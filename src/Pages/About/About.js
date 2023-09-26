@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Container } from './AboutStyle'
-
+import { goToExperience, goToRocket } from '../../router/coordinates'
+import { useNavigate } from 'react-router-dom'
 
 const About = () => {
-
     const [etnia, setEtnia] = useState("")
     const [genero, setGenero] = useState("")
     const [sexual, setSexual] = useState("")
@@ -13,15 +13,16 @@ const About = () => {
     const [renda, setRenda] = useState("")
     const [bolsa, setBolsa] = useState("")
 
+    const navigate = useNavigate()
+
     return (
 
         <Container>
-
             <div className='sobre'>
                 <div className='h1'>
                 </div>
                 <h1>Sobre você</h1>
-                <p>O nosso objetivo é saber mais sobre quais perfis estamos conseguindo atingir para melhorarmos cada vez mais as experiências para os desenvolvedores do Brasil na busca pelo trabalho.</p>
+                <h2>O nosso objetivo é saber mais sobre quais perfis estamos conseguindo atingir para melhorarmos cada vez mais as experiências para os desenvolvedores do Brasil na busca pelo trabalho.</h2>
             </div>
 
             <div className='sobre'>
@@ -34,21 +35,21 @@ const About = () => {
                     value={etnia}
                     onChange={(e) => setEtnia(e.target.value)}
                     placeholder='   Selecione sua etnia'
-                    ></input>
+                ></input>
 
                 <strong>Qual o seu gênero?</strong>
                 <input
                     value={genero}
                     onChange={(e) => setGenero(e.target.value)}
                     placeholder='   Selecione sua gênero'
-                    ></input>
+                ></input>
 
                 <strong>Qual a sua orientação sexual?</strong>
                 <input
                     value={sexual}
                     onChange={(e) => setSexual(e.target.value)}
                     placeholder='   Selecione sua orientação sexual'
-                    ></input>
+                ></input>
 
                 <strong>Você possui alguma deficiência?</strong>
                 <p>A deficiência pode ser física, mental, auditiva, visual ou múltipla. A sigla utilizada é PCD</p>
@@ -57,42 +58,41 @@ const About = () => {
                     value={deficiencia}
                     onChange={(e) => setDeficiencia(e.target.value)}
                     placeholder='   Você tem algum tipo de deficiência?'
-                    ></input>
+                ></input>
 
                 <strong>Como é o lugar onde você mora?</strong>
                 <input
                     value={mora}
                     onChange={(e) => setMora(e.target.value)}
                     placeholder='   Como é o lugar onde você mora?'
-                    ></input>
+                ></input>
 
                 <strong>Você cursou o ensino médio em:</strong>
                 <input
                     value={medio}
                     onChange={(e) => setMedio(e.target.value)}
                     placeholder='   Selecione o tipo de Instituição de Ensino.'
-                    ></input>
+                ></input>
 
                 <strong>Qual das seguintes alternativas melhor expressa a situação atual da sua renda familiar?</strong>
                 <input
                     value={renda}
                     onChange={(e) => setRenda(e.target.value)}
                     placeholder='   Selecione uma opção'
-                    ></input>
+                ></input>
 
                 <strong>Você possui bolsa de estudos?</strong>
                 <input
                     value={bolsa}
                     onChange={(e) => setBolsa(e.target.value)}
                     placeholder='   Selecione uma opção'
-                    ></input>
-
+                ></input>
                 <button>Salvar informações</button>
             </div>
 
             <div className='btn'>
-                <button className='voltar'>Voltar</button>
-                <button className='proximo'>Tudo certo!</button>
+                <button onClick={() => goToExperience(navigate)} className='voltar'>Voltar</button>
+                <button onClick={() => goToRocket(navigate)} className='proximo'>Tudo certo!</button>
             </div>
         </Container>
     )

@@ -12,35 +12,38 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
+    gap: 0.2rem;
     background: rgba(255, 255, 255, .30);
     border: 2px solid #ffffff30;
     color: #3c2166;
     backdrop-filter: blur(15px);
     width: 30rem;
     min-height: 10rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 25px;
-    padding: 30px;
+    padding: 20px;
 
     h1 {
-        margin-bottom: 30px;
-        font-size: 30px;
-        text-align: start;
+        font-size: 28px;
     }
-
+    h2 {
+        font-size: 19px;
+    }
+    p {
+        font-size: 18px;
+    }
     input {
-        width: 340px;
+        width: 420px;
         margin: 8px;
         padding: 12px;
-        
     }
     button {
-            margin-right: 214px;
             background: #f3f3f3;
             border-radius: 15px;
             border: 2px solid white;
-            width: 36%;
+            width: 50%;
             height: 45px;
             font-size: 16px;
             font-weight: 900;
@@ -48,286 +51,73 @@ position: relative;
             cursor: pointer;
             margin-top: 12px;
             margin-bottom: 30px;
-            margin-left: 18px;
     }
-    .btn-formacao {
-            margin-left: 209px;
-            background: #3c2166;
-            border-radius: 15px;
-            border: 2px solid white;
-            width: 83%;
-            height: 55px;
-            font-size: 20px;
-            font-weight: 900;
-            color: #f3f3f3;
-            cursor: pointer;
-            margin-top: 8px;
-            margin-bottom: 8px;
-    } 
 
     @media (max-width: 550px) {
         width: 26rem;
         h1 { 
-           font-size: 28px;
+           font-size: 25px;
            text-align: center;
         }
-
+        h2 {
+            font-size: 17px;
+        }
         p {
-            font-size: 21px;
+            font-size: 17px;
+        }
+        strong {
+            font-size: 16px;
+        }
+        button {
+            width: 60%;
+        }
+        input {
+            width: 350px;
         }
 }
     @media (max-width: 470px) {
-        width: 20rem;
+        width: 24rem;
        h1 { 
            font-size: 25px;
            text-align: center;
         }
     input {
-        width: 250px;
+        width: 320px;
+    }
+    p {
+        font-size: 15px;
+    }
+    strong {
+        font-size: 15px;
     }
     button {
-        width: 50%;
+        width: 60%;
         font-size: 15px;
-        margin-left: 6rem;
-    }
-    .btn-formacao {
-        font-size: 15px;
-        width: 80%;
     }
 }
     @media (max-width: 402px) {
-        width: 18rem;
-        h1{
-            font-size: 22px;  
-        }
-        p{
-            font-size: 18px;
-            margin-top: 1rem;
-        }
-        button {
-            width: 50%;
-            font-size: 15px;
-            margin-left: 6rem;
-        }
-        img {
-        width: 200px;
-    } 
-}
-}
-
-.idioma {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: rgba(255, 255, 255, .30);
-    border: 2px solid #ffffff30;
-    color: #3c2166;
-    backdrop-filter: blur(15px);
-    width: 30rem;
-    min-height: 10rem;
-    margin-top: 2rem;
-    border-radius: 25px;
-    padding: 30px;
-
-    h1 {
-        margin-bottom: 30px;
-        font-size: 30px;
-        text-align: start;
-    }
-
-    input {
-        width: 340px;
-        margin: 8px;
-        padding: 12px;
-        
-    }
-    button {
-            margin-right: 214px;
-            background: #f3f3f3;
-            border-radius: 15px;
-            border: 2px solid white;
-            width: 36%;
-            height: 45px;
-            font-size: 16px;
-            font-weight: 900;
-            color: #3c2166;
-            cursor: pointer;
-            margin-top: 12px;
-            margin-bottom: 30px;
-            margin-left: 18px;
-    }
-    .btn-idioma {
-            margin-left: 209px;
-            background: #3c2166;
-            border-radius: 15px;
-            border: 2px solid white;
-            width: 83%;
-            height: 55px;
-            font-size: 20px;
-            font-weight: 900;
-            color: #f3f3f3;
-            cursor: pointer;
-            margin-top: 8px;
-            margin-bottom: 8px;
-    } 
-
-    @media (max-width: 550px) {
-        width: 26rem;
-        h1 { 
-           font-size: 28px;
-           text-align: center;
-        }
-        p {
-            font-size: 21px;
-        }
-}
-    @media (max-width: 470px) {
         width: 20rem;
-    h1 { 
-           font-size: 25px;
-           text-align: center;
-        }
-    input {
-        width: 250px;
-    }
-    button {
-        width: 50%;
-        font-size: 15px;
-        margin-left: 6rem;
-    }
-    .btn-idioma {
-        font-size: 15px;
-        width: 80%;
-    }
-}
-    @media (max-width: 402px) {
-        width: 18rem;
         h1{
             font-size: 22px;  
         }
-        p{
-            font-size: 18px;
-            margin-top: 1rem;
-        }
-        button {
-            width: 50%;
-            font-size: 15px;
-            margin-left: 6rem;
-        }
-        img {
-        width: 200px;
-    } 
-}
-}
-.ferramentas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: rgba(255, 255, 255, .30);
-    border: 2px solid #ffffff30;
-    color: #3c2166;
-    backdrop-filter: blur(15px);
-    width: 30rem;
-    min-height: 10rem;
-    margin-top: 2rem;
-    border-radius: 25px;
-    padding: 30px;
-    margin-bottom: 30px;
-
-    h1 {
-        margin-bottom: 30px;
-        font-size: 30px;
-        text-align: start;
-    }
-
-    input {
-        width: 340px;
-        margin: 8px;
-        padding: 12px;  
-    }
-
-    button {
-            margin-right: 214px;
-            background: #f3f3f3;
-            border-radius: 15px;
-            border: 2px solid white;
-            width: 36%;
-            height: 45px;
+        h2 {
             font-size: 16px;
-            font-weight: 900;
-            color: #3c2166;
-            cursor: pointer;
-            margin-top: 12px;
-            margin-bottom: 30px;
-            margin-left: 18px;
-    }
-    .btn-ferramentas {
-            margin-left: 209px;
-            background: #3c2166;
-            border-radius: 15px;
-            border: 2px solid white;
-            width: 83%;
-            height: 55px;
-            font-size: 20px;
-            font-weight: 900;
-            color: #f3f3f3;
-            cursor: pointer;
-            margin-top: 8px;
-            margin-bottom: 8px;
-    } 
-
-    @media (max-width: 550px) {
-        width: 26rem;
-        h1 { 
-           font-size: 28px;
-           text-align: center;
         }
-        p {
-            font-size: 21px;
-        }
-}
-    @media (max-width: 470px) {
-        width: 20rem;
-       h1 { 
-           font-size: 25px;
-           text-align: center;
-        }
-    input {
-        width: 250px;
-    }
-    button {
-        width: 50%;
-        font-size: 15px;
-        margin-left: 6rem;
-    }
-    .btn-ferramentas {
-        font-size: 15px;
-        width: 80%;
-    }
-}
-    @media (max-width: 402px) {
-        width: 18rem;
-        h1{
-            font-size: 22px;  
+        input {
+            width: 280px;
         }
         p{
-            font-size: 18px;
-            margin-top: 1rem;
+            font-size: 15px;
+        }
+        strong {
+        font-size: 14px;
         }
         button {
-            width: 50%;
-            font-size: 15px;
-            margin-left: 6rem;
-        }
-        .btn-ferramentas {
-        font-size: 15px;
-        width: 90%;
-    }
+            width: 70%;
+            font-size: 14px;
+        }  
 }
 }
-
 .btn {
     display: flex;
     align-items: center;
@@ -336,7 +126,7 @@ position: relative;
     margin-top: 12px;
 .voltar {
     margin: 0 8px;
-    padding: 1px 70px;
+    padding: 1px 65px;
     height: 55px;
     font-size: 20px;
     border-radius: 15px;
@@ -348,7 +138,7 @@ position: relative;
 }
 .proximo {
     margin: 0 8px;
-    padding: 1px 70px;
+    padding: 1px 65px;
     height: 55px;
     font-size: 20px;
     border-radius: 15px;
@@ -364,27 +154,31 @@ position: relative;
 }
 @media (max-width: 550px) {
         .proximo {
-            padding: 1px 55px;  
+            padding: 1px 49px;  
         }
         .voltar {
-            padding: 1px 55px;
+            padding: 1px 49px;
         }     
 }
     @media (max-width: 470px) {
         .proximo {
-            padding: 1px 35px;  
+            padding: 1px 44px;  
+            font-size: 18px;
         }
         .voltar {
-            padding: 1px 35px;
+            padding: 1px 44px;
+            font-size: 18px;
         }   
 }
     @media (max-width: 402px) {
 
         .proximo {
-            padding: 1px 25px;  
+            padding: 1px 34px;
+            font-size: 16px;
         }
         .voltar {
-            padding: 1px 25px;
+            padding: 1px 34px;
+            font-size: 16px;
         }
 }
 }

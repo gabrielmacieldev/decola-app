@@ -3,8 +3,13 @@ import { Container, Image } from './FormStyle'
 import background from '../../assets/BG  DECOLA COM O FOGUETE.png'
 import { FaSignOutAlt } from 'react-icons/fa'
 import foguete from '../../assets/foguete.png'
+import { useNavigate } from 'react-router-dom'
+import { goToAbout, goToContactDetails, goToExperience, goToLogin, goToTraining } from '../../router/coordinates'
 
 export const Form = () => {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <Image>
@@ -13,12 +18,12 @@ export const Form = () => {
 
       <Container>
 
-        <a> <FaSignOutAlt class="icons" /></a>
+        <a onClick={() => goToLogin(navigate)}> <FaSignOutAlt class="icons" /></a>
         <div className='form'>
-          <button>Dados de Contatos</button>
-          <button>Formação</button>
-          <button>Experiência</button>
-          <button>Sobre você</button>
+          <button onClick={() => goToContactDetails(navigate)}>Dados de Contatos</button>
+          <button onClick={() => goToTraining(navigate)}>Formação</button>
+          <button onClick={() => goToExperience(navigate)}>Experiência</button>
+          <button onClick={() => goToAbout(navigate)}>Sobre você</button>
           <img className='foguete' src={foguete}></img>
         </div>
 

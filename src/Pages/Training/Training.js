@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Container } from './TrainingStyle'
 import { FaMinus } from "react-icons/fa6";
+import { goToContactDetails, goToExperience } from '../../router/coordinates';
+import { useNavigate } from 'react-router-dom';
 
 
 const Training = () => {
@@ -17,12 +19,14 @@ const Training = () => {
     const [ferramentas, setFerramentas] = useState("")
     const [conhecimento, setConhecimento] = useState("")
 
+    const navigate = useNavigate()
+
     return (
 
         <Container>
 
             <div className='formacao'>
-                
+
                 <h1>Formação principal</h1>
                 <input
                     value={faculdade}
@@ -113,8 +117,8 @@ const Training = () => {
             </div>
 
             <div className='btn'>
-                <button className='voltar'>Voltar</button>
-                <button className='proximo'>Próximo</button>
+                <button onClick={() => goToContactDetails(navigate)} className='voltar'>Voltar</button>
+                <button onClick={() => goToExperience(navigate)} className='proximo'>Próximo</button>
             </div>
 
         </Container>

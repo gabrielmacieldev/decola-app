@@ -16,6 +16,9 @@ export const goToTraining = (navigate) => {
 export const goToExperience = (navigate) => {
     navigate("/experience")
 }
+export const goToAbout = (navigate) => {
+    navigate("/about")
+}
 export const goToRocket = (navigate) => {
     navigate("/rocket")
 }

@@ -453,7 +453,6 @@ position: relative;
             font-size: 14px;
             height: 50px;
         }
-     
 }
     @media (max-width: 402px) {
         width: 16rem;

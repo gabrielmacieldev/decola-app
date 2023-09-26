@@ -3,6 +3,8 @@ import { Container, Image } from './ContactDetailsStyle'
 import logo from '../../assets/Perfil.png'
 import background from '../../assets/BG FILTRO SOMENTE BAIXO.png'
 import { FaRegFileAlt } from "react-icons/fa";
+import { goToForm, goToTraining } from '../../router/coordinates';
+import { useNavigate } from 'react-router-dom';
 
 const ContactDetails = () => {
 
@@ -19,6 +21,8 @@ const ContactDetails = () => {
     const [github, setGithub] = useState("")
     const [mod, setMod] = useState("")
     const [anexo, setAnexo] = useState("")
+
+    const navigate = useNavigate()
 
     return (
         <Container>
@@ -78,7 +82,7 @@ const ContactDetails = () => {
             </div>
 
             <div className='social'>
-                <h1>Perfis socias</h1>
+                <h1>Perfis sociais</h1>
                 <input
                     value={linkedin}
                     onChange={(e) => setLinkedin(e.target.value)}
@@ -145,8 +149,8 @@ const ContactDetails = () => {
             </div>
 
             <div className='btn'>
-                <button className='voltar'>Voltar</button>
-                <button className='proximo'>Próximo</button>
+                <button onClick={() => goToForm(navigate)} className='voltar'>Voltar</button>
+                <button onClick={() => goToTraining(navigate)} className='proximo'>Próximo</button>
             </div>
 
         </Container>

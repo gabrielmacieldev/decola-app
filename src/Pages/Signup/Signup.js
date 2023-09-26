@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import { Container, Image } from './SignupStyle'
 import background from '../../assets/BG  DECOLA COM O FOGUETE.png'
+import { goToLogin } from '../../router/coordinates'
+import { useNavigate } from 'react-router-dom'
+
 
 export const Signup = () => {
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [password2, setPassword2] = useState("")
+  const navigate = useNavigate()
 
   return (
     <>
@@ -40,7 +44,7 @@ export const Signup = () => {
         <div className='signup'>
           <span>Já tem uma conta?</span>
 
-          <span>LOGIN</span>
+          <span onClick={() => goToLogin(navigate)}>LOGIN</span>
         </div>
 
       </Container>

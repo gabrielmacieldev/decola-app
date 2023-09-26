@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Container } from './ExperienceStyle'
 import { FaMinus } from "react-icons/fa6";
-
+import { goToAbout, goToTraining } from '../../router/coordinates';
+import { useNavigate } from 'react-router-dom';
 
 const Experience = () => {
 
@@ -10,6 +11,7 @@ const Experience = () => {
     const [termino, setTermino] = useState("")
     const [cargo, setCargo] = useState("")
     const [atividade, setAtividade] = useState("")
+    const navigate = useNavigate()
 
     return (
 
@@ -63,8 +65,8 @@ const Experience = () => {
             </div>
 
             <div className='btn'>
-                <button className='voltar'>Voltar</button>
-                <button className='proximo'>Próximo</button>
+                <button onClick={() => goToTraining(navigate)} className='voltar'>Voltar</button>
+                <button onClick={() => goToAbout(navigate)} className='proximo'>Próximo</button>
             </div>
         </Container>
     )
