@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export const Image = styled.div`
 position: absolute;
-width: 100%;
+width: 35%;
 height: 100%;
+margin-left: 33%;
 z-index: 0;
 img {
     object-fit: cover;
